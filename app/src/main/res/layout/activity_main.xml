@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/bg_color"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".view.MainActivity">
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/dayDate"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Sabtu, 12-08-2021"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/logoAksiberbagi"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_weight=".2"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="alarmGambar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/alarm_clock_clock" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/titleA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Menyapu dan buang sampah:"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/namePicA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Anamkun!!"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/purple_500"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/titleB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Membersihkan area sekitar kompor"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/namePicB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Hamada!!"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:background="@color/purple_500"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/titleC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:text="Membersihkan Kamar mandi"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/namePicC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Adifia"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="30dp"
+                    android:layout_height="3dp"
+                    android:background="@color/purple_500"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/startFuck"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#020A4A"
+                    android:text="Mulai"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/shutUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#f86048"
+                    android:text="Heningkan"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="10dp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:id="@+id/titleANext"
+                    android:layout_marginTop="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="Teman yang baik adalah teman yang menghargai temannya dan tidak menyusahkan temannya juga pastinya"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:paddingTop="20dp"
+                    android:id="@+id/namePicANext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:text="#Owly -> kan sudah DEWASA!!"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
