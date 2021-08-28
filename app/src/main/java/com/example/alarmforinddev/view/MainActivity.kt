@@ -16,20 +16,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnSilence: Button = findViewById(R.id.shutUp)
-        val btnStart: Button = findViewById(R.id.startFuck)
-        var  sec = 5
+        val btnStart: Button = findViewById(R.id.startAlarm)
+        var  sec = 15
 
-
-
-        btnSilence.setOnClickListener {
-            val toast = Toast.makeText(
-                applicationContext,
-                "Diam Anjeng!!",
-                Toast.LENGTH_LONG
-            )
-            toast.show()
-        }
         btnStart.setOnClickListener {
             val toast = Toast.makeText(
                 applicationContext,

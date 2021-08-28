@@ -25,99 +25,28 @@
                 tools:ignore="MissingConstraints">
                 <TextView
                     android:layout_gravity="center"
-                    android:id="@+id/dayDate"
                     android:layout_marginTop="20dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Sabtu, 12-08-2021"
+                    android:text="MOHON DIBACA DENGAN BAIK!!"
                     android:textSize="18sp" />
-                <ImageView
-                    android:id="@+id/logoAksiberbagi"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_weight=".2"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_gravity="center"
-                    android:contentDescription="alarmGambar"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/alarm_clock_clock" />
+
                 <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Menyapu dan buang sampah:"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicA"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="80dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Anamkun!!"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Membersihkan area sekitar kompor"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Hamada!!"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Membersihkan Kamar mandi"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Adifia"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginBottom="30dp"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
+                    android:text="Aplikasi ini di buat karena kurangnya kesadaran dalam hidup berkelompok dikontrakan. kebersihan dan kesadaran diri untuk membersihkan sampah dapur dan kamar mandi sangat tidak ada sekali. hanya orang-orang itu saja yang melakukan kebersihan buang sampah dan menyapu dari belakang kedepan. ingat kita hidup bersama saling evaluasi diri. punya kerjaan masing-masing dan menuntut waktu baik property yang digunakan juga bersama jadi mari bersama kita jaga kebersihan dan kenyamanan dikontrakan. diharapkan dengan adanya aplikasi ini tidak ada yg lupa perhitungan dan tetek bengek lainnya hingga tidak melakukan kesadaran masing-masing dalam menjaga kebersihan. ingatt!! tidak ada alasan barang menumpuk dll agar semua merasa nyaman maka tidak ada alasan untuk kebersihan dan kerapian selama dipandang tidak rapi kotor dan tidak nyaman maka dengan tegas akan dilakukan evaluasi perundungan. ingat teman yg baik menghargai temannya sebaik mungkin dan tidak menjadikan temannya babu. selama anda manusia mohon kesadarannya jika anda tidak sadar maka anda bukanlah teman!. dengan membaca ini juga diharapkan menjadi evaluasi diri dalam kinerja tim dll aturan yang sudah di buat mohon diikuti karena jika menghambat kerjaan berarti menghambat kinerja tim jadi tolong agar menyesuaikan dalam hal bekerja baik secara waktu dan kedisiplinan masing-masing."
+                    android:textSize="14sp" />
+
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/startFuck"
+                    android:id="@+id/startAlarm"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginStart="20dp"
@@ -128,41 +57,7 @@
                     android:textSize="16sp"
                     android:textStyle="bold"
                     app:cornerRadius="10dp" />
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/shutUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:backgroundTint="#f86048"
-                    android:text="Heningkan"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="10dp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleANext"
-                    android:layout_marginTop="20dp"
-                    android:paddingEnd="20dp"
-                    android:paddingStart="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Teman yang baik adalah teman yang menghargai temannya dan tidak menyusahkan temannya juga pastinya"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:paddingTop="20dp"
-                    android:id="@+id/namePicANext"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="#Owly -> kan sudah DEWASA!!"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
+
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
