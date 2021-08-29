@@ -12,8 +12,8 @@ public class ApiService {
 
     static String token;
 
-    public static String baseUrl(String uri){
-        String BASE_URL = "https://api.aksiberbagi.com/v1/";
+    public static String baseUrl(String uri) {
+        String BASE_URL = "https://inddev-id.tech/api/";
         return BASE_URL + uri;
     }
 
@@ -23,9 +23,9 @@ public class ApiService {
      * @param endpoint ini adalah full url endpoint api
      * @return String
      */
-    public static ANRequest get(String endpoint){
+    public static ANRequest get(String endpoint) {
         return AndroidNetworking.get(endpoint)
-                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer "+ token).setPriority(Priority.HIGH).build();
+                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer " + token).setPriority(Priority.HIGH).build();
     }
 
     /**
@@ -34,10 +34,10 @@ public class ApiService {
      * @param endpoint Ini adalah full url endpoint api
      * @return ANRequest
      */
-    public static ANRequest post(String endpoint, JSONObject data){
+    public static ANRequest post(String endpoint, JSONObject data) {
         return AndroidNetworking.post(endpoint)
                 .addJSONObjectBody(data)
-                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer "+ token).build();
+                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer " + token).build();
     }
 
     /**
@@ -45,9 +45,9 @@ public class ApiService {
      *
      * @return ANRequest
      */
-    public static ANRequest post(String endpoint){
+    public static ANRequest post(String endpoint) {
         return AndroidNetworking.post(endpoint)
-                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer "+ token).build();
+                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer " + token).build();
     }
 
     /**
@@ -56,15 +56,15 @@ public class ApiService {
      * @param endpoint Ini adalah full url endpoint api
      * @return ANRequest
      */
-    public static ANRequest put(String endpoint, JSONObject data){
-        try{
+    public static ANRequest put(String endpoint, JSONObject data) {
+        try {
             data.put("_method", "PUT");
-        }catch (Exception e){
+        } catch (Exception e) {
             Log.d("ADD_METHOD", e.getMessage());
         }
         return AndroidNetworking.post(endpoint)
                 .addJSONObjectBody(data)
-                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer "+ token).build();
+                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer " + token).build();
     }
 
     /**
@@ -73,15 +73,21 @@ public class ApiService {
      * @param endpoint Ini adalah full url endpoint api
      * @return ANRequest
      */
-    public static ANRequest delete(String endpoint){
+    public static ANRequest delete(String endpoint) {
         JSONObject data = new JSONObject();
-        try{
+        try {
             data.put("_method", "DELETE");
-        }catch (Exception e){
+        } catch (Exception e) {
             Log.d("ADD_METHOD", e.getMessage());
         }
         return AndroidNetworking.post(endpoint)
                 .addJSONObjectBody(data)
-                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer "+ token).build();
+                .addHeaders("Accept", "application/json").addHeaders("Authorization", "Bearer " + token).build();
+    }
+
+
+    public static ANRequest getJadwal() {
+        String endpoint=baseUrl("picket-schedules");
+        return get(endpoint);
     }
 }

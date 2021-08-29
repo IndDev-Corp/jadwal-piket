@@ -31,10 +31,10 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Sabtu, 12-08-2021"
+                    android:text="Kuy Semangat"
                     android:textSize="18sp" />
                 <ImageView
-                    android:id="@+id/logoAksiberbagi"
+                    android:id="@+id/logoAlarm"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_weight=".2"
@@ -46,88 +46,16 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/alarm_clock_clock" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Menyapu dan buang sampah:"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Anamkun!!"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
+                <FrameLayout
+                    android:id="@+id/layoutEwallet"
+                    android:orientation="vertical"
                     android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Membersihkan area sekitar kompor"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Hamada!!"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/titleC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:text="Membersihkan Kamar mandi"
-                    android:textSize="18sp" />
-                <TextView
-                    android:layout_gravity="center"
-                    android:id="@+id/namePicC"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="Adifia"
-                    android:layout_marginBottom="20dp"
-                    android:textSize="24sp" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_marginBottom="30dp"
-                    android:layout_height="3dp"
-                    android:background="@color/purple_500"/>
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/shutUp"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:backgroundTint="#f86048"
-                    android:text="Heningkan"
-                    android:textColor="#FFFFFF"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    app:cornerRadius="10dp" />
+                    android:layout_height="wrap_content">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerTask"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </FrameLayout>
                 <TextView
                     android:layout_gravity="center"
                     android:id="@+id/titleANext"
@@ -138,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Teman yang baik adalah teman yang menghargai temannya dan tidak menyusahkan temannya juga pastinya"
+                    android:text="Mari menjaga ketertiban bersama"
                     android:textSize="18sp" />
                 <TextView
                     android:layout_gravity="center"
@@ -148,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="#Owly -> kan sudah DEWASA!!"
+                    android:text="#Owly yes Sudah DEWASA!!"
                     android:layout_marginBottom="20dp"
                     android:textSize="24sp" />
             </LinearLayout>

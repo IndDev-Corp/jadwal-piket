@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textColor="@color/white"
-                    android:text="Aplikasi ini di buat karena kurangnya kesadaran dalam hidup berkelompok dikontrakan. kebersihan dan kesadaran diri untuk membersihkan sampah dapur dan kamar mandi sangat tidak ada sekali. hanya orang-orang itu saja yang melakukan kebersihan buang sampah dan menyapu dari belakang kedepan. ingat kita hidup bersama saling evaluasi diri. punya kerjaan masing-masing dan menuntut waktu baik property yang digunakan juga bersama jadi mari bersama kita jaga kebersihan dan kenyamanan dikontrakan. diharapkan dengan adanya aplikasi ini tidak ada yg lupa perhitungan dan tetek bengek lainnya hingga tidak melakukan kesadaran masing-masing dalam menjaga kebersihan. ingatt!! tidak ada alasan barang menumpuk dll agar semua merasa nyaman maka tidak ada alasan untuk kebersihan dan kerapian selama dipandang tidak rapi kotor dan tidak nyaman maka dengan tegas akan dilakukan evaluasi perundungan. ingat teman yg baik menghargai temannya sebaik mungkin dan tidak menjadikan temannya babu. selama anda manusia mohon kesadarannya jika anda tidak sadar maka anda bukanlah teman!. dengan membaca ini juga diharapkan menjadi evaluasi diri dalam kinerja tim dll aturan yang sudah di buat mohon diikuti karena jika menghambat kerjaan berarti menghambat kinerja tim jadi tolong agar menyesuaikan dalam hal bekerja baik secara waktu dan kedisiplinan masing-masing."
+                    android:text="Dengan Adanya aplikasi ini di mohon untuk mengikuti ketertiban dan peraturan"
                     android:textSize="14sp" />
 
                 <com.google.android.material.button.MaterialButton
